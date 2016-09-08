@@ -3,6 +3,7 @@
   "auth-server-url": "https://secure-sso-sso-app-demo.apps.example.com/auth",
   "ssl-required": "external",
   "resource": "app-jsp",
+  "public-client": "false",
   "credentials": {
     "secret": "bce5816d-98c4-404f-a18d-bcc5cb005c79"
   }
