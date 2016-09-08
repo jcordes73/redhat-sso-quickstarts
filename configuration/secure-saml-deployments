@@ -1,4 +1,4 @@
-<secure-deployment name="sso-saml-demo.war">
+<secure-deployment name="app-profile-saml.war">
     <SP entityID="sso-saml-demo"
         sslPolicy="EXTERNAL"
         logoutPage="/index.jsp">
