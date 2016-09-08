@@ -7,5 +7,7 @@
   "credentials": {
     "secret": "bce5816d-98c4-404f-a18d-bcc5cb005c79"
   },
-  "use-resource-role-mappings": true
+  "use-resource-role-mappings": true,
+  "register-node-at-startup": true,
+  "register-node-period": 1000
 }

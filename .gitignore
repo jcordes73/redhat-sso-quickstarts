@@ -1,6 +1,3 @@
-**/config/keycloak.json
-**/config/keycloak-saml.xml
-
 # Intellij
 ###################
 .idea
