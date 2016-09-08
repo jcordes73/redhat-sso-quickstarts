@@ -1,5 +1,5 @@
 {
-    "clientId": "app-jsp",
+    "clientId": "openshift-demo",
     "rootUrl": "http://localhost:8080/app-jsp",
     "enabled": true,
     "redirectUris": [
