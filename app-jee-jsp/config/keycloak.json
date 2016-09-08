@@ -1,0 +1,11 @@
+{
+  "realm": "OpenShift",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApb4+qXAM2PFA5BDJyyHCpCWMrXSeK8MzkNv5ImlHw6OOvsPPSN1tG8ylosb8VKlIw/2VqLgnH5VqihAA7fsKC7RUv9LO7ZLWD9C0VAUkXHKoP5AX6sN2V87VM2bvw757StdugsuZkXAT9CPyj33cajIHbgtDvaBVjLJ3sVw73ZEpIhFfur5URCN2MfhN1MlPul+u4Di8gxXLW+mPNS5Rh1JFC9iuIUGh0N/kKGbYrGv2ypBex9UfwCGVQ0HEntfBuTQHKT0KY9AzA96D+MsCIZ0JEJEf/Otirz8xIPiBoS5wjBHEINGWUmKXlEQOzUThVIJNwSqLffUJDlKhph4/6QIDAQAB",
+  "auth-server-url": "https://secure-sso-sso-app-demo.apps.example.com/auth",
+  "ssl-required": "external",
+  "resource": "app-jsp",
+  "credentials": {
+    "secret": "bce5816d-98c4-404f-a18d-bcc5cb005c79"
+  },
+  "use-resource-role-mappings": true
+}
