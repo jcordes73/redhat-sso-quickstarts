@@ -30,7 +30,7 @@
                 <Key signing="true">
                      <KeyStore file="/etc/eap-secret-volume/saml.jks" password="password">
                          <Certificate alias="OpenShift"/>
-    i                </KeyStore>
+                     </KeyStore>
                 </Key>
             </Keys>
         </IDP>
