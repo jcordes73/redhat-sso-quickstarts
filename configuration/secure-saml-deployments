@@ -1,0 +1,38 @@
+<secure-deployment name="sso-saml-demo.war">
+    <SP entityID="sso-saml-demo"
+        sslPolicy="EXTERNAL"
+        logoutPage="/index.jsp">
+        <Keys>
+            <Key signing="true">
+                <KeyStore file= "/etc/eap-secret-volume/saml.jks" password="password">
+                    <PrivateKey alias="sso-saml-demo" password="password"/>
+                    <Certificate alias="OpenShift"/>
+                </KeyStore>
+            </Key>
+        </Keys>
+        <IDP entityID="idp"
+             signatureAlgorithm="RSA_SHA256"
+             signatureCanonicalizationMethod="http://www.w3.org/2001/10/xml-exc-c14n#">
+            <SingleSignOnService signRequest="true"
+                                 validateResponseSignature="true"
+                                 validateAssertionSignature="false"
+                                 requestBinding="POST"
+                                 bindingUrl="https://secure-sso-sso-app-demo.apps.example.com/auth/realms/OpenShift/protocol/saml"/>
+            <SingleLogoutService signRequest="true"
+                                 signResponse="true"
+                                 validateRequestSignature="true"
+                                 validateResponseSignature="true"
+                                 requestBinding="POST"
+                                 responseBinding="POST"
+                                 postBindingUrl="https://secure-sso-sso-app-demo.apps.example.com/auth/realms/OpenShift/protocol/saml"
+                                 redirectBindingUrl="https://secure-sso-sso-app-demo.apps.example.com/auth/realms/OpenShift/protocol/saml"/>
+            <Keys>
+                <Key signing="true">
+                    <CertificatePem>
+                       MIICoTCCAYkCBgFW/appczANBgkqhkiG9w0BAQsFADAUMRIwEAYDVQQDDAlPcGVuU2hpZnQwHhcNMTYwOTA2MDQwMTU4WhcNMjYwOTA2MDQwMzM4WjAUMRIwEAYDVQQDDAlPcGVuU2hpZnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQClvj6pcAzY8UDkEMnLIcKkJYytdJ4rwzOQ2/kiaUfDo46+w89I3W0bzKWixvxUqUjD/ZWouCcflWqKEADt+woLtFS/0s7tktYP0LRUBSRccqg/kBfqw3ZXztUzZu/DvntK126Cy5mRcBP0I/KPfdxqMgduC0O9oFWMsnexXDvdkSkiEV+6vlREI3Yx+E3UyU+6X67gOLyDFctb6Y81LlGHUkUL2K4hQaHQ3+QoZtisa/bKkF7H1R/AIZVDQcSe18G5NAcpPQpj0DMD3oP4ywIhnQkQkR/862KvPzEg+IGhLnCMEcQg0ZZSYpeURA7NROFUgk3BKot99QkOUqGmHj/pAgMBAAEwDQYJKoZIhvcNAQELBQADggEBABjv4YUezdvTAoYNcviJx/+0c8WT8271dLHdmB7Pfs7BM9hBBtctnrOROzWobNw/HyARp+ctcaLNq3azg0qxhIMkxRA/RFaAeJJqak2ZIiOi5caYMDc8aLpa7jxB/bDCmsEHAQ44xBPGQphV/qPHdsuuwK0yw2ZWvxSOgjqOWNeMuflf+EgxlVthwPGf5VWNd/BScedoGdXLKMkxCzFUSzYq0NGiKEzTM/yykMxzClzp8uGLAz4GSYO39sxzQoMFzp/V4NdxvxcUtUV9xnFdDwRd09v/ICK+zjVJeNc5SzPeaCRBhGHC7HuPLP+Un2JxrLMG3jwfW61nrsGrPgM2Tq4=
+                    </CertificatePem>
+                </Key>
+            </Keys>
+        </IDP>
+    </SP>
+</secure-deployment>
