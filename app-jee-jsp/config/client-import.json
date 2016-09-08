@@ -1,12 +1,12 @@
 {
-    "clientId": "openshift-demo",
-    "rootUrl": "http://localhost:8080/app-jsp",
+    "clientId": "app-jsp",
+    "rootUrl": "http://sample-jsp.eap-app-demo.apps.example.com/app-jsp",
     "enabled": true,
     "redirectUris": [
-        "http://localhost:8080/app-jsp/*"
+        "http://sample-jsp.eap-app-demo.apps.example.com/app-jsp/*"
     ],
     "webOrigins": [
-        "http://localhost:8080"
+        "http://sample-jsp.eap-app-demo.apps.example.com"
     ],
     "publicClient": false,
     "secret": "bce5816d-98c4-404f-a18d-bcc5cb005c79"
