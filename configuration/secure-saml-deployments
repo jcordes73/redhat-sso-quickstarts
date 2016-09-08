@@ -4,7 +4,7 @@
         logoutPage="/index.jsp">
         <Keys>
             <Key signing="true">
-                <KeyStore file= "/etc/eap-secret-volume/saml.jks" password="password">
+                <KeyStore file= "/etc/sso-secret-volume/saml.jks" password="password">
                     <PrivateKey alias="sso-saml-demo" password="password"/>
                     <Certificate alias="sso-saml-demo"/>
                 </KeyStore>
@@ -28,7 +28,7 @@
                                  redirectBindingUrl="https://secure-sso-sso-app-demo.apps.example.com/auth/realms/OpenShift/protocol/saml"/>
             <Keys>
                 <Key signing="true">
-                     <KeyStore file="/etc/eap-secret-volume/saml.jks" password="password">
+                     <KeyStore file="/etc/sso-secret-volume/saml.jks" password="password">
                          <Certificate alias="OpenShift"/>
                      </KeyStore>
                 </Key>
