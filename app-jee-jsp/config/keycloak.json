@@ -1,5 +1,6 @@
 {
   "realm": "OpenShift",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1aPbvluB3Yl0SZx+BMn1tvXflYZ8dRaDGxPDLLsxDGaafG7289UTVHZjL+2Wlbf1JOnUpb/0TfFocNyeUcBogZmVRQ6+VsBsy71AjXB0ER9N21CFfQTokyxjwjDUvA6ASE07vjyzDxoeScjEqi5BGHLw5JxeGr3/cRah0WxFq1f5fRdtTjxVxSrESt2O8UxJaBMMY3naydqYpDUxteNSVDV6FbUHyXWE/Mdrhmf3HJ+h9VoueS5v3lfrNrhigXDtRiESLYz/KAFTISHEentIIz0SCjC2wA3bGB4ACzKPCW2/pVMG6xiWU+xd3WlG3j93Akuy7SFCpemdAa5LmvGEIQIDAQAB",
   "auth-server-url": "https://secure-sso-sso-app-demo.apps.example.com/auth",
   "ssl-required": "external",
   "resource": "app-jsp",
